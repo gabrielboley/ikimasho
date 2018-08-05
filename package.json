@@ -1,0 +1,22 @@
+{
+  "name": "ikimasho",
+  "version": "1.0.0",
+  "description": "setup mac os environment with basic preferences ",
+  "main": "index.js",
+  "repository": "https://github.com/gabrielboley/ikimasho.git",
+  "author": "Gabriel Boley <gboley@overstock.com>",
+  "license": "MIT",
+  "scripts": {
+    "iko": "babel-node index.js && sh ./bin/mac_setup.sh"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-spawn": "^6.0.5"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
